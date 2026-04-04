@@ -31,13 +31,11 @@ níveis de dificuldade** e **CPU com lógica básica de IA**.
 Use **Letra + Número** para jogar:
 
     A   B   C
+1
+2
+3
 
-+---+---+---+ 1 \| \| \| \| +---+---+---+ 2 \| \| \| \| +---+---+---+ 3
-\| \| \| \| +---+---+---+
-
-Exemplos de jogadas: A1\
-B2\
-C3
+Exemplos de jogadas: A1\B2\C3
 
 Você joga com **X**\
 O computador joga com **O**
