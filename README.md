@@ -1,102 +1,139 @@
 # 🎮 Jogo da Velha em Python (Terminal)
 
-Um jogo da velha completo rodando no terminal, com **modo memória**, **3
-níveis de dificuldade** e **CPU com lógica básica de IA**.
+Um jogo da velha completo rodando no terminal, com **modo memória**, **3 níveis de dificuldade** e **CPU com lógica básica de IA**.
 
-------------------------------------------------------------------------
+Projeto feito em **Python puro** 🐍 — ideal para estudar lógica de programação, estruturas de dados e IA simples.
+
+---
 
 ## 📌 Funcionalidades
 
--   Interface em ASCII no terminal\
--   Jogador vs Computador\
--   3 níveis de dificuldade\
--   Modo memória (esconde jogadas antigas)\
--   CPU que tenta vencer ou bloquear\
--   Loop para jogar várias partidas
+- Interface em ASCII no terminal  
+- Jogador vs Computador  
+- 3 níveis de dificuldade  
+- Modo memória (esconde jogadas antigas)  
+- CPU que tenta vencer e bloquear o jogador  
+- Possibilidade de jogar várias partidas seguidas  
 
-------------------------------------------------------------------------
+---
 
-## 🧠 Dificuldade da CPU
+## 🧠 Níveis de dificuldade da CPU
 
-  Nível         Comportamento
-  ------------- ----------------------------------
-  1 - Fácil     Jogadas aleatórias
-  2 - Médio     Tenta vencer ou bloquear
-  3 - Difícil   Mesmo do médio (mais desafiador)
+| Nível | Descrição |
+|---|---|
+| **1 – Fácil** | CPU joga totalmente aleatório |
+| **2 – Médio** | CPU tenta vencer ou bloquear |
+| **3 – Difícil** | Mesmo comportamento do médio (IA básica mais competitiva) |
 
-------------------------------------------------------------------------
+---
 
-## 🕹 Como jogar
+## 🕹️ Como jogar
 
-Use **Letra + Número** para jogar:
+As jogadas são feitas usando **Letra + Número**:
 
-    A   B   C
-1
-2
-3
+```
 
-Exemplos de jogadas: A1\B2\C3
+```
+A   B   C
+```
 
-Você joga com **X**\
-O computador joga com **O**
++---+---+---+
+1 |   |   |   |
++---+---+---+
+2 |   |   |   |
++---+---+---+
+3 |   |   |   |
++---+---+---+
 
-------------------------------------------------------------------------
+```
 
-## 👁 Modo Memória
+### Exemplos de jogadas válidas:
+```
 
-Quando ativado, o tabuleiro esconde jogadas antigas durante a partida.\
-Isso aumenta a dificuldade e treina a memória do jogador 😈
+A1
+B2
+C3
 
-------------------------------------------------------------------------
+````
 
-## ▶ Como executar
+- O jogador usa **X**
+- O computador usa **O**
 
-### 1) Instale o Python (3.8+)
+---
 
-Verifique: python --version
+## 👁️ Modo Memória
 
-### 2) Clone o repositório
+Quando ativado, o tabuleiro **esconde jogadas antigas** durante a partida.
 
-git clone https://github.com/EdcleyVitor/jogo-da-velha-python.git
+Isso deixa o jogo mais difícil e treina sua memória 😈
 
-### 3) Execute o jogo
+---
 
+## ▶️ Como executar o projeto
+
+### 1️⃣ Instale o Python (3.8 ou superior)
+
+Verifique a instalação:
+```bash
+python --version
+````
+
+### 2️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/EdcleyVitor/JogoDaVelha.git
+```
+
+### 3️⃣ Entre na pasta do projeto
+
+```bash
+cd JogoDaVelha
+```
+
+### 4️⃣ Execute o jogo
+
+```bash
 python jogo.py
+```
 
-------------------------------------------------------------------------
+---
 
-## 📂 Estrutura do Código
+## 📂 Estrutura do código
 
-  Função       Descrição
-  ------------ -------------------------
-  desenhar()   Mostra o tabuleiro
-  checar()     Verifica vitória
-  cpumove()    IA da CPU
-  partida()    Executa uma partida
-  main         Loop de várias partidas
+| Função       | Responsabilidade                |
+| ------------ | ------------------------------- |
+| `desenhar()` | Desenha o tabuleiro no terminal |
+| `checar()`   | Verifica se houve vitória       |
+| `cpumove()`  | Lógica de decisão da CPU        |
+| `partida()`  | Executa uma partida completa    |
+| `main`       | Loop para jogar várias partidas |
 
-------------------------------------------------------------------------
+---
 
 ## 🤖 Lógica da IA
 
-No modo médio/difícil a CPU: 1. Procura jogada para vencer\
-2. Se não houver, tenta bloquear o jogador\
-3. Caso contrário, joga aleatório
+Nos níveis Médio e Difícil, a CPU segue a ordem:
 
-------------------------------------------------------------------------
+1. Procura jogada para **vencer**
+2. Se não existir, tenta **bloquear o jogador**
+3. Caso não haja risco → joga aleatoriamente
 
-## 💡 Possíveis melhorias
+---
 
--   Interface gráfica (Tkinter/Pygame)
--   IA Minimax (invencível)
--   Multiplayer online
--   Placar de vitórias
--   Versão web
+## 💡 Melhorias futuras
 
-------------------------------------------------------------------------
+Ideias para evoluir o projeto:
+
+* Interface gráfica (Tkinter ou Pygame)
+* IA Minimax (CPU invencível)
+* Multiplayer local
+* Sistema de pontuação
+* Versão web
+
+---
 
 ## 👨‍💻 Autor
 
-Edcley Vítor
+**Edcley Vítor**
 
 Se gostou do projeto, deixe uma ⭐ no repositório!
