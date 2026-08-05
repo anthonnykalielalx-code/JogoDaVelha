@@ -96,3 +96,4 @@ if __name__ == "__main__":
                 break
     except KeyboardInterrupt:
         sys.exit()
+python jogo.py
